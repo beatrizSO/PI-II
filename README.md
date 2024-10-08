@@ -1,6 +1,7 @@
 # PI-II
 
-Projeto Integrador Transdisciplinar II
+A new Flutter project.
 
-Aluna: Beatriz de Oliveira Borges <br/>
-RGM: 34897810
+## Getting Started
+
+FlutterFlow projects are built to run on the Flutter _stable_ release.
