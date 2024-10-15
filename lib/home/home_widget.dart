@@ -703,9 +703,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                     color: Colors.white,
                   ),
                   alignment: const AlignmentDirectional(0.0, 1.0),
-                  child: const Padding(
+                  child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 24.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -715,10 +715,19 @@ class _HomeWidgetState extends State<HomeWidget> {
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(
-                              Icons.home,
-                              color: Color(0xFF4B39EF),
-                              size: 28.0,
+                            InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                context.pushNamed('Home');
+                              },
+                              child: const Icon(
+                                Icons.home,
+                                color: Color(0xFF4B39EF),
+                                size: 28.0,
+                              ),
                             ),
                           ],
                         ),
@@ -726,10 +735,19 @@ class _HomeWidgetState extends State<HomeWidget> {
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(
-                              Icons.shopping_cart,
-                              color: Color(0xFF57636C),
-                              size: 28.0,
+                            InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                context.pushNamed('Checkout');
+                              },
+                              child: const Icon(
+                                Icons.shopping_cart,
+                                color: Color(0xFF57636C),
+                                size: 28.0,
+                              ),
                             ),
                           ],
                         ),
@@ -737,10 +755,19 @@ class _HomeWidgetState extends State<HomeWidget> {
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(
-                              Icons.person,
-                              color: Color(0xFF57636C),
-                              size: 28.0,
+                            InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                context.pushNamed('Profile');
+                              },
+                              child: const Icon(
+                                Icons.person,
+                                color: Color(0xFF57636C),
+                                size: 28.0,
+                              ),
                             ),
                           ],
                         ),

@@ -50,6 +50,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Home',
           path: '/home',
           builder: (context, params) => const HomeWidget(),
+        ),
+        FFRoute(
+          name: 'Checkout',
+          path: '/checkout',
+          builder: (context, params) => const CheckoutWidget(),
+        ),
+        FFRoute(
+          name: 'Profile',
+          path: '/profile',
+          builder: (context, params) => const ProfileWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

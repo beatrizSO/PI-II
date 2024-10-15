@@ -1373,7 +1373,8 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   16.0),
                                                       child: FFButtonWidget(
                                                         onPressed: () async {
-                                                          context.safePop();
+                                                          context.pushNamed(
+                                                              'Login');
                                                         },
                                                         text: 'Criar conta',
                                                         options:
