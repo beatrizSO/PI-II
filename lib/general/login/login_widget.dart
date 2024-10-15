@@ -560,9 +560,9 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   0.0,
                                                                   16.0),
                                                       child: FFButtonWidget(
-                                                        onPressed: () {
-                                                          print(
-                                                              'Button pressed ...');
+                                                        onPressed: () async {
+                                                          context.pushNamed(
+                                                              'Home');
                                                         },
                                                         text: 'Logar',
                                                         options:
