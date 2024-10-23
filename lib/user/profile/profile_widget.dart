@@ -66,10 +66,6 @@ class _ProfileWidgetState extends State<ProfileWidget> {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          const Row(
-            mainAxisSize: MainAxisSize.max,
-            children: [],
-          ),
           Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(0.0, 1.0, 0.0, 0.0),
             child: Column(
