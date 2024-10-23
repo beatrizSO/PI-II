@@ -815,7 +815,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget> {
                             ),
                           ),
                           Text(
-                            'Atenção: No mommento só temos a opção de pagamento na entrega, pode ser realizado através de pix, cartão de crédito ou débito.',
+                            'Atenção: No momento só temos a opção de pagamento na entrega, pode ser realizado através de pix, cartão de crédito ou débito.',
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
