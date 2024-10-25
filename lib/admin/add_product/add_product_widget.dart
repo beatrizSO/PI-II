@@ -55,7 +55,7 @@ class _AddProductWidgetState extends State<AddProductWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'adicionar novo produto',
+                'Adicionar novo produto',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: const Color(0xFF15161E),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -11,16 +12,16 @@ void main() async {
 
   await FlutterFlowTheme.initialize();
 
-  runApp(const MyApp()); // Use const para melhorar o desempenho
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({super.key}); // Use const aqui também para otimizar
+  const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   State<MyApp> createState() => _MyAppState();
 
-  // ignore: library_private_types_in_public_api
   static _MyAppState of(BuildContext context) =>
       context.findAncestorStateOfType<_MyAppState>()!;
 }
@@ -66,32 +67,4 @@ class _MyAppState extends State<MyApp> {
       routerConfig: _router,
     );
   }
-}
-
-@override
-void initState() {
-  super.initState();
-
-  _appStateNotifier = AppStateNotifier.instance;
-
-  // Configurando as rotas do GoRouter
-  _router = GoRouter(
-    refreshListenable: _appStateNotifier,
-    initialLocation: '/login', // Definindo a página inicial
-    routes: [
-      GoRoute(
-        path: '/login',
-        builder: (context, state) => const LoginPage(), // Página de Login
-      ),
-      GoRoute(
-        path: '/register',
-        builder: (context, state) => const RegisterPage(), // Página de Registro
-      ),
-      GoRoute(
-        path: '/home',
-        builder: (context, state) => const HomePage(), // Página Home
-      ),
-      // Adicione outras rotas conforme necessário
-    ],
-  );
 }
