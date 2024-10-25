@@ -1,7 +1,4 @@
-# PI-II
+# Projeto Integrador II
 
-A new Flutter project.
-
-## Getting Started
-
-FlutterFlow projects are built to run on the Flutter _stable_ release.
+Aluna: Beatriz de Oliveira Borges <br/>
+RGM: 34897810
